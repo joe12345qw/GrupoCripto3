@@ -1,31 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cifrado de Vigenère</title>
+  <link rel="stylesheet" href="stylesVigenere.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><h1>Criptografía</h1></a>
+    <nav>
+      <a href="cifrado-cesar.html">Cifrado Cesar</a>
+      <a href="cifrado-camposanto.html">Cifrado Camposanto</a>
+      <a href="cifrado-polybios.html">Cifrado de Polybios</a>
+      <a href="cifrado-transposicion.html">Cifrado de Transposición Grupos</a>
+      <a href="cifrado-vigenere.html">Cifrado de Vigenère</a>
+    </nav>
+  </header>
+  <section id="cifrado-vigenere">
+    <h2>Cifrado Vigenère</h2>
+    <label for="message">Mensaje:</label>
+    <textarea id="message" rows="4" cols="50"></textarea><br><br>
 
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Criptografía</title>
-        <link rel="stylesheet" href="estilos.css">
-    </head>
-    <body>
+    <label for="keyword">Clave:</label>
+    <input type="text" id="keyword"><br><br>
 
-        <header>
-            <a href="index.html"><h1>Criptografía</h1></a>
-            <nav>
-            <a href="cifrado-cesar.html">Cifrado Cesar</a>
-            <a href="cifrado-camposanto.html">Cifrado Camposanto</a>
-            <a href="cifrado-polybios.html">Cifrado de Polybios</a>
-            <a href="cifrado-transposicion.html">Cifrado de Transposición Grupos</a>
-            <a href="cifrado-vigenere.html">Cifrado de Vigenère</a>
-        </nav>
-        </header>
-<section id="cifrado-vigenere">
-            <h2>Cifrado Vigenere</h2>
-           
-           
-        </section> 
-        <footer>
-            <p>&copy; 2023 Criptografía. Todos los derechos reservados.</p>
-        </footer>
- </body>
-    </html>
+    <button onclick="encrypt()">Cifrar</button>
+    <button onclick="decrypt()">Descifrar</button><br><br>
+
+    <label for="result">Resultado:</label>
+    <textarea id="result" rows="4" cols="50" readonly></textarea>
+    <script src="scriptVigenere.js"></script>
+                   
+  </section> 
+  <footer>
+    <p>&copy; 2023 Criptografía. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
