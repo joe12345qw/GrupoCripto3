@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Criptografía</title>
         <link rel="stylesheet" href="estilos.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
 
@@ -22,10 +23,16 @@
 <section id="cifrado-polybios">
             <h2>Cifrado Polybios</h2>
            
-           
+           <label for="inputText">Ingrese el texto para cifrar:</label>
+  <textarea id="inputText" rows="4" cols="50"></textarea>
+  <button onclick="encryptpolybios()">Encriptar</button><br><br>
+  <label for="outputText">Mensaje Encriptado:</label>
+  <textarea id="outputText" rows="4" cols="50" readonly></textarea><br><br>
+  <button onclick="clearFields()">Limpiar mensaje encriptado</button><br><br>
         </section>  
     <footer>
             <p>&copy; 2023 Criptografía. Todos los derechos reservados.</p>
         </footer>
 </body>
     </html>
+
