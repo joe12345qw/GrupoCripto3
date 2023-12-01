@@ -1,31 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
 
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Criptografía</title>
-        <link rel="stylesheet" href="estilos.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografía</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
-        <header>
-          <a href="index.html"><h1>Criptografía</h1></a>
-            <nav>
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>Criptografía</h1>
+        </a>
+        <nav>
             <a href="cifrado-cesar.html">Cifrado Cesar</a>
             <a href="cifrado-camposanto.html">Cifrado Camposanto</a>
             <a href="cifrado-polybios.html">Cifrado de Polybios</a>
             <a href="cifrado-transposicion.html">Cifrado de Transposición Grupos</a>
             <a href="cifrado-vigenere.html">Cifrado de Vigenère</a>
         </nav>
-        </header>
-<section id="cifrado-transposicion">
-            <h2>Cifrado Transposición</h2>
-           
-           
-        </section>  
-    <footer>
+        <section id="cifrado-transposicion">
+            <h2>Cifrado de Transposición</h2>
+            
+            <label for="mensajeOriginal">Mensaje Original:</label>
+            <textarea id="mensajeOriginal" rows="4" cols="50"></textarea><br><br>
+    
+            <label for="clave">Clave:</label>
+            <input type="number" id="clave"><br><br>
+    
+            <button onclick="cifrar()">Cifrar</button><br><br>
+    
+            <label for="resultado" >Resultado:</label>
+            <textarea id="resultado" rows="4" cols="50" readonly></textarea>
+            
+            <script src="script-Transposicon.js"></script> <!-- Asegúrate de que el nombre del script coincida -->
+        </section> 
+        <footer>
             <p>&copy; 2023 Criptografía. Todos los derechos reservados.</p>
         </footer>
-</body>
+    </body>
     </html>
