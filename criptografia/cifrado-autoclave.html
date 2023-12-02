@@ -3,21 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Cifrado de Autoclave</title>
-  <link rel="stylesheet" href="stylesBeaufort.css">
+  <link rel="stylesheet" href="./estilos.css">
+  <link rel="stylesheet" href="./CSS/stylesBeaufort.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Cifrado de Autoclave</h1>
-    <label for="keyword">Mensaje:</label>
-    <textarea id="inputText" placeholder="Introduce el texto a cifrar"></textarea>
-    <label for="keyword">Clave:</label>
-    <input type="text" id="keyword" placeholder="Introduce la clave">
-    <label for="modulo">Módulo:</label>
-    <input type="number" id="modulo" placeholder="Introduce el valor del módulo(26-27)" min="26" max="27">
-    <button onclick="cifrar()">Cifrar</button>
-    <h2>Texto cifrado:</h2>
-    <textarea id="outputText" readonly></textarea>
-  </div>
-  <script src="scriptBeaufort.js"></script>
+  <header>
+    <a href="index.html"><h1>Criptografía</h1></a>
+    <nav>
+      <a href="cifrado-cesar.html">Cifrado Cesar</a>
+      <a href="cifrado-camposanto.html">Cifrado Camposanto</a>
+      <a href="cifrado-polybios.html">Cifrado de Polybios</a>
+      <a href="cifrado-transposicion.html">Cifrado de Transposición Grupos</a>
+      <a href="cifrado-vigenere.html">Cifrado Vigenère</a>
+      <a href="cifrado-Autoclave.html">Cifrado Autoclave</a>
+      
+    </nav>
+  </header>
+  <section id="cifrado-cesar">
+    <h2>Cifrado Autoclave</h2>
+    <div class="container">
+      <label for="keyword">Mensaje:</label>
+      <textarea id="inputText" placeholder="Introduce el texto a cifrar"></textarea>
+      <label for="keyword">Clave:</label>
+      <input type="text" id="keyword" placeholder="Introduce la clave">
+      <label for="modulo">Módulo:</label>
+      <input type="number" id="modulo" placeholder="Introduce el valor del módulo(26-27)" min="26" max="27">
+      <button onclick="cifrar()">Cifrar</button>
+      <h2>Texto cifrado:</h2>
+      <textarea id="outputText" readonly></textarea>
+    </div>
+    <script src="./Script/scriptBeaufort.js"></script>
+  </section>
+  <footer>
+    <p>&copy; 2023 Criptografía. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
