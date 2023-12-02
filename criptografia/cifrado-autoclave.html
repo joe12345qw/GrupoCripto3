@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cifrado de Autoclave</title>
+  <link rel="stylesheet" href="stylesBeaufort.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cifrado de Autoclave</h1>
+    <label for="keyword">Mensaje:</label>
+    <textarea id="inputText" placeholder="Introduce el texto a cifrar"></textarea>
+    <label for="keyword">Clave:</label>
+    <input type="text" id="keyword" placeholder="Introduce la clave">
+    <label for="modulo">Módulo:</label>
+    <input type="number" id="modulo" placeholder="Introduce el valor del módulo(26-27)" min="26" max="27">
+    <button onclick="cifrar()">Cifrar</button>
+    <h2>Texto cifrado:</h2>
+    <textarea id="outputText" readonly></textarea>
+  </div>
+  <script src="scriptBeaufort.js"></script>
+</body>
+</html>
