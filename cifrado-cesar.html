@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cifrado César</title>
+  <link rel="stylesheet" href="./estilos.css">
+  <link rel="stylesheet" href="./CSS/stylesCesar.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><h1>Criptografía</h1></a>
+    <nav>
+      <a href="cifrado-cesar.html">Cifrado Cesar</a>
+      <a href="cifrado-beaufort.html">Cifrado Beaufort</a>
+      <a href="cifrado-afin.html">Cifrado Afin</a>
+      <a href="cifrado-polybios.html">Cifrado de Polybios</a>
+      <a href="cifrado-transposicion.html">Cifrado de Transposición Grupos</a>
+      <a href="cifrado-vigenere.html">Cifrado Vigenère</a>
+      <a href="cifrado-Autoclave.html">Cifrado Autoclave</a>
+
+    </nav>
+  </header>
+  <section id="cifrado-cesar">
+    <h2>Cifrado César</h2>
+    <div>
+      <label for="inputText">Texto a cifrar/descifrar:</label>
+      <textarea id="inputText" rows="4" cols="50"></textarea>
+    </div>
+    <div>
+      <label for="shiftAmount">Valor de desplazamiento:</label>
+      <input type="number" id="shiftAmount" value="3">
+    </div>
+    <button onclick="cipher()">Cifrar/Descifrar</button>
+    <div>
+      <label for="outputText">Resultado:</label>
+      <textarea id="outputText" rows="4" cols="50" readonly></textarea>
+    </div>
+    <script src="./Script/scriptCesar.js"></script>
+  </section>
+  <footer>
+    <p>&copy; 2023 Criptografía. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

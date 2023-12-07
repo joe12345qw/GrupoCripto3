@@ -1,0 +1,40 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criptografía</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="script-polybios.js" defer></script>
+    </head>
+    <body>
+
+        <header>
+            <a href="index.html"><h1>Criptografía</h1></a>
+            <nav>
+            <a href="cifrado-cesar.html">Cifrado Cesar</a>
+            <a href="cifrado-beaufort.html">Cifrado Beaufort</a>
+            <a href="cifrado-afin.html">Cifrado Afin</a>
+            <a href="cifrado-polybios.html">Cifrado de Polybios</a>
+            <a href="cifrado-transposicion.html">Cifrado de Transposición Grupos</a>
+            <a href="cifrado-vigenere.html">Cifrado Vigenère</a>
+            <a href="cifrado-Autoclave.html">Cifrado Autoclave</a>
+        </nav>
+        </header>
+<section id="cifrado-polybios">
+            <h2>Cifrado Polybios</h2>
+           
+           <label for="inputText">Ingrese el texto para cifrar:</label>
+  <textarea id="inputText" rows="4" cols="50"></textarea>
+  <button onclick="encryptpolybios()">Encriptar</button><br><br>
+  <label for="outputText">Mensaje Encriptado:</label>
+  <textarea id="outputText" rows="4" cols="50" readonly></textarea><br><br>
+  <button onclick="clearFields()">Limpiar mensaje encriptado</button><br><br>
+        </section>  
+    <footer>
+            <p>&copy; 2023 Criptografía. Todos los derechos reservados.</p>
+        </footer>
+</body>
+    </html>
+
