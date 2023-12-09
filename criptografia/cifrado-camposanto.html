@@ -9,7 +9,54 @@
     </head>
     <body>
 
-        <header>
+        <header><!DOCTYPE html>
+            <html lang="es">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Criptografía</title>
+                <link rel="stylesheet" href="estilos.css">
+                <link rel="stylesheet" href="CSS/stylesCamposanto.css">
+            </head>
+            <body>
+            
+                <header>
+                    <a href="index.html"><h1>Criptografía</h1></a>
+                    <nav>
+                        <a href="cifrado-cesar.html">Cifrado Cesar</a>
+                        <a href="cifrado-camposanto.html">Cifrado Camposanto</a>
+                        <a href="cifrado-polybios.html">Cifrado de Polybios</a>
+                        <a href="cifrado-transposicion.html">Cifrado de Transposición Grupos</a>
+                        <a href="cifrado-vigenere.html">Cifrado de Vigenère</a>
+                    </nav>
+                </header>
+            
+                <section id="cifrado-camposanto">
+                    <h2>Cifrado Camposanto</h2>
+                    
+                    <div class="container">
+                        <label for="inputText">Texto a cifrar/descifrar:</label>
+                        <textarea id="inputText" rows="4" cols="50"></textarea>
+                        
+                        <label for="clave">Clave:</label>
+                        <input type="text" id="clave" placeholder="Introduce la clave">
+                        
+                        <button onclick="cifrarCamposanto()">Cifrar/Descifrar</button>
+                        
+                        <h2>Resultado:</h2>
+                        <textarea id="outputText" rows="4" cols="50" readonly></textarea>
+                    </div>
+                    
+                    <script src="./Script/scriptCamposanto.js"></script>
+                </section>
+            
+                <footer>
+                    <p>&copy; 2023 Criptografía. Todos los derechos reservados.</p>
+                </footer>
+            
+            </body>
+            </html>
+            
             
             <a href="index.html"><h1>Criptografía</h1></a>
             <nav>
